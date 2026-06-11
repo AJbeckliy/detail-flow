@@ -10,7 +10,7 @@ Default behavior:
 2. After confirmation, create or confirm the long-scroll master specification: visual world, style DNA, typography lock, continuity motif, and section rhythm.
 3. Generate or confirm a `1:3` continuous spatial master reference when the workflow needs stronger visual continuity than text can provide.
 4. Generate final screens as sequential page-section images, preferably `9:21` for this project's long-scroll detail-page workflow.
-5. After the first 2-3 final screens, concatenate a small preview and audit early continuity before generating the rest.
+5. After the first 2 final screens, concatenate a small preview and audit early continuity. Present the `1:3` master, both screens, and the preview together for the second user confirmation before generating the rest.
 6. Use the `1:3` master as a spatial continuity anchor, not as a final output or crop source. Do not copy its layout, crop it, or replace the approved 9:21 slice structure with it.
 7. If splitting, keep the images as slices from one continuous page system. If the user wants one long output, concatenate the slices in order.
 8. After full generation, concatenate the full set and audit product consistency, text quality, continuity, and unsupported claims.
@@ -25,7 +25,7 @@ Continuity rules:
 - Keep recurring elements consistent when they exist: product shape, product material, ingredient style, character or model identity, icons, badges, CTA styling, and section dividers.
 - If final delivery is 8 images, each image should feel like a crop or page segment from the same long detail page. Do not generate 8 unrelated social-media posters unless the user explicitly requests poster sets.
 - Prefer one master long-page prompt plus section-specific notes over 8 unrelated prompts.
-- Use staged preview checks: first concatenate the opening 2-3 slices to catch early structure failures, then concatenate the full set for final review.
+- Use staged preview checks: first concatenate the opening 2 slices to catch early structure failures and support the second confirmation, then concatenate the full set for final review.
 - In the SynVow project workflow, final prompts should create single `9:21` vertical images. Do not generate `1:3` as the final page slice ratio.
 - Text-only continuity instructions are weak. If each slice is generated as an independent image without visual context, the model often creates a complete standalone poster. Prefer ordered generation with edge references, outpainting/continuation context, or at least a concat-preview review loop after every few slices.
 - A `1:3` spatial master can make continuity more stable. Use it to anchor the long page's background world, lighting direction, table/floor perspective, product scale rhythm, recurring motif rhythm, ingredient or prop flow, text hierarchy, and transition logic.
@@ -125,7 +125,7 @@ Copy differentiation rules:
 
 Post-generation audit:
 
-- Early concat preview: after the first 2-3 slices, check whether the page opener, second-screen continuation, and first proof/detail section share one visual system without repeating identical poster structure. Stop and revise before generating the rest if this preview fails.
+- Early concat preview: after the first 2 slices, check whether the page opener and second-screen continuation share one visual system without repeating identical poster structure. Present this preview with the `1:3` master and both individual slices for confirmation. Stop and revise before generating the rest if this preview fails.
 - Full concat preview: after all slices, check the complete long-scroll rhythm, transitions, product consistency, text quality, unsupported claims, and repeated layout patterns.
 - Product drift: color, shape, logo, material, window placement, handles, proportions, or included accessories changed.
 - Text quality: headings are misspelled, unreadable, too small, or inconsistent across screens.
@@ -142,7 +142,7 @@ Delivery checklist:
 - Preserve original generated files and copy the approved outputs to the destination.
 - Include the approved 1:3 master when used.
 - Include every final individual slice with sequential filenames.
-- Include the early 2-3-slice concat preview.
+- Include the early 2-slice concat preview.
 - Include the full-resolution final long-image concat; optionally include a lightweight preview copy.
 - Exclude failed or superseded variants by default.
 - Verify the destination files and report the final delivery folder path.

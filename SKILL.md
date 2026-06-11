@@ -9,6 +9,23 @@ description: Build, redesign, polish, or review product detail pages for product
 
 Use this skill to turn a product or feature idea into a useful, polished detail page. Prioritize clear product communication, real user workflows, implementation quality, responsive behavior, and visual assets that reveal the product rather than decorative filler. Keep the skill general-purpose: it may be used with different image-generation tools, frontend stacks, or local pipelines, but its core job is product detail-page planning, generation, review, and iteration.
 
+## Execution Contract
+
+For image-led ecommerce detail-page requests, follow the defined DetailFlow route strictly. Treat this contract as higher priority than convenience, improvisation, or tool preference.
+
+- MUST follow this order: analyze inputs -> produce the page blueprint -> wait for user approval -> establish the text and visual masters -> generate and inspect the 1:3 image master when used -> generate the first 2-3 final slices -> inspect a concatenated preview -> generate the remaining slices -> run the final audit -> save and report the output folder.
+- MUST stop at every explicit approval gate. Do not interpret silence, a previous approval, or a request to "continue" from another stage as approval for an unreviewed blueprint or master.
+- MUST inspect every generated master and staged output before continuing. Do not proceed when the image is textless despite planned copy, reads as unrelated standalone posters, ignores the reference style, changes the product, contains garbled text, or invents unsupported claims.
+- MUST use the user's product images, reference images, confirmed facts, approved blueprint, and approved masters as the authoritative inputs. Do not replace them with a newly invented concept or a generic category template.
+- MUST keep the task scoped to the requested ecommerce image set. Do not create a website, video, animation, presentation, application, workflow node, Python script, automation script, or other auxiliary artifact unless the user explicitly asks for that artifact.
+- MUST NOT write code merely to simulate image generation, create placeholder deliverables, or bypass an unavailable image-generation/editing capability. If a required capability is unavailable or fails, state the limitation and stop at the current stage or offer the smallest relevant alternative.
+- MUST NOT add unrequested stages, formats, ratios, image counts, mascots, models, claims, parameters, badges, certifications, or deliverables. Suggestions may be presented separately, but do not implement them without approval.
+- MUST NOT silently change the production route after a failed result. Revise only the smallest responsible layer described in the revision-routing rules, then request confirmation when the change affects an approved blueprint or master.
+- MUST preserve approved outputs. Do not overwrite or discard accepted masters or slices while experimenting; save revisions as clearly identified replacements or versions.
+- MAY use lightweight existing utilities only when they are necessary for deterministic operations such as reading image dimensions, concatenating approved slices, checking files, or saving deliverables. Do not create new utility scripts for these operations unless the user explicitly requests automation.
+
+If the user's request is ambiguous, choose the narrowest action that advances the current DetailFlow stage. Ask before expanding scope.
+
 ## Core Workflow
 
 For image-to-ecommerce detail page requests, do not generate final images immediately. First produce a structured page blueprint and ask the user to confirm or revise it. Generate images only after the user approves the content plan, unless the user explicitly asks to skip planning.
@@ -149,4 +166,3 @@ Use this workflow when the user provides a product image and asks for an ecommer
 ## References
 
 Read `references/detail-page-patterns.md` when choosing section patterns, adapting the skill to a specific product category, or reviewing whether a page structure is complete.
-

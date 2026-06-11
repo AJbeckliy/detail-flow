@@ -35,7 +35,7 @@ Continuity rules:
 - After slice 01, headings should not make every slice feel like a new campaign opener. Use smaller hierarchy, integrated labels, macro evidence, environment continuation, or content modules to reduce standalone-poster closure.
 - Each slice needs explicit top and bottom edge behavior. Top edge should inherit visual material from the previous slice; bottom edge should introduce material for the next slice. These edge zones should not contain the main headline or critical product proof.
 
-Use this when the user provides a product image or asks for an 8-screen ecommerce detail page, product sales page, listing long image, or marketplace璇︽儏椤?
+Use this when the user provides a product image or asks for an 8-screen ecommerce detail page, product sales page, listing long image, or marketplace详情页.
 
 Recommended screen order:
 
@@ -93,7 +93,7 @@ Blueprint rules:
 - One `slice_id` must map to one final image item. Do not merge two screen ids into one output.
 - Adjacent screens must not answer the same `buyer_question`, repeat the same `screen_job`, or use the same `evidence_type` unless the second screen clearly changes proof angle.
 - Screen 01 must establish 2-4 `claim_seed` values. Later screens must expand, prove, visualize, compare, or contextualize those seeds. Do not let screen 02+ introduce unrelated new selling points that screen 01 did not prepare.
-- A good first screen seed set is broad enough to support the whole page but concrete enough to prove visually. Example for cookies: `宸у厠鍔涜眴婊℃弧`, `閰ヨ剢鍙ｆ劅`, `閲戦粍鐑樼剻鎰焋, `鐢滅偣鍒嗕韩鏃跺埢`.
+- A good first screen seed set is broad enough to support the whole page but concrete enough to prove visually. Example for cookies: `巧克力豆满满`, `酥脆口感`, `金黄烘焙感`, `甜点分享时刻`.
 - Later visible copy should sound like it is answering "why is that first-screen claim true?" or "how does that first-screen claim show up in use?" If it reads like a new campaign headline, rewrite it.
 - `module_type` is an internal control. Convert it into natural buyer-facing copy; never display internal labels such as "detail", "parameter_trust", "FAQ", or "screen_job".
 - `content_density` controls both copy and layout. High-density screens can have one strong primary module plus 2-3 supporting modules. Medium screens usually have a modest title plus labels, notes, or scene captions. Low-density screens may be atmosphere-led, but still need a clear product identity, transition, trust, or emotional role.
@@ -118,7 +118,7 @@ Copy differentiation rules:
 - Each slice must answer a different buyer question. Examples: What is it? Why want it? What proves the taste? How does the texture feel? When do I eat it? Who can share it? What makes it feel trustworthy? Why buy now?
 - Assign each slice a distinct copy role before writing headlines: identity, desire, proof, texture, scene, sharing, trust/detail, closing.
 - Different roles should still unfold from the same first-screen seed set. "Different" means different proof angle, use case, visual evidence, or hierarchy, not unrelated selling points.
-- Do not let every headline reuse the same words such as "棣?, "閰?, "鐢?, "宸у厠鍔?, "婊℃弧", or "涓€鍙?. Repeated product keywords are allowed only when they serve a new information role.
+- Do not let every headline reuse the same words such as "香", "酥", "甜", "巧克力", "满满", or "一口". Repeated product keywords are allowed only when they serve a new information role.
 - Body copy should introduce new evidence or context, not restate the headline.
 - Tags should not all be taste adjectives. Mix product identity, usage scene, texture evidence, pairing, share occasion, and trust/detail cues.
 - If three consecutive slices still feel interchangeable when read without images, rewrite the copy plan before generating images.
@@ -222,4 +222,3 @@ Score each area as pass, needs work, or missing:
 - Technical honesty
 - Existing design-system fit
 - Rendering verification
-
